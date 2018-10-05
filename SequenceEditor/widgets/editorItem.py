@@ -11,6 +11,8 @@ class EditorItemClass(QGraphicsItem):
         self.h = height
         self.num = num
         self.hover = None
+        self.gapL = 20
+        self.gapR = 20
         self.setAcceptHoverEvents(True)
         self.resizePadding = 10
         self.resizeL = False
@@ -54,6 +56,60 @@ class EditorItemClass(QGraphicsItem):
             self.setPos(self.pos() + QPoint(0, delta))
         else:
             self.setPos(self.pos() - QPoint(0, delta))
+
+    def adjustXPos(self, items):
+        #store [item, startX, width, startY, height]
+        xpos = [[x, x.pos().x(),x.w, x.pos().y(), x.h] for x in items]
+
+        for item, x, w, y, h in xpos:
+            if item != self:
+                if abs(self.pos().y() - y) < 2*h:
+                    delta_l = ((self.pos().x()) - x) + self.w
+                    delta_r = (x + w) - self.pos().x()
+                    if (delta_l > self.gapL) and (delta_l < self.gapL*2):
+                        self.setPos(self.pos() - QPoint(delta_l, 0))
+                        break
+                    if (delta_r > self.gapR) and (delta_r < self.gapR*2):
+                        self.setPos(self.pos() + QPoint(delta_r, 0))
+                        break
+                    if (delta_l < self.gapL) and (delta_l > -self.gapL*2):
+                        self.setPos(self.pos() - QPoint(delta_l, 0))
+                        break
+                        self.setPos(self.pos() - QPoint(delta_l, 0))
+                    if (delta_r < self.gapR) and (delta_r > -self.gapR*2):
+                        self.setPos(self.pos() + QPoint(delta_r, 0))
+                        break
+
+
+
+
+
+
+
+
+
+    # def adjustXPos(self, items):
+    #     for i in items:
+    #         delta = (self.pos().x()+self.w)-i.pos().x()
+    #         print delta
+    #
+    #     # xpos = [[x.pos().x()] for x in items]
+    #     #
+    #     # for x in xpos:
+    #     #     delta = (x[0]-(self.pos().x()+self.w))
+    #     #     print delta
+    #     #     # if delta < 0:
+    #     #     #     self.setPos(self.pos() - QPoint(delta, 0))
+    #     #     #     print "moved"
+
+
+        # if any(self.pos().x() >= x[0] for x in xpos):
+        #     delta = self.pos().x()-x[0]
+        #     print delta
+        #     self.setPos(self.pos()-QPoint(20, 0))
+        #     print "moved"
+
+
 
     def checkCollision(self):
         coll = self.scene().collidingItems(self)

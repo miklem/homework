@@ -12,7 +12,6 @@ class EditorSceneClass(QGraphicsScene):
         self.lastYpos = 0
         self.addNode()
 
-
     def drawBackground(self, painter, rect):
         if False:
             painter = QPainter
@@ -40,7 +39,6 @@ class EditorSceneClass(QGraphicsScene):
         self.addItem(item)
         item.setPos(pos)
 
-
     def deleteNode(self, clear = False):
         if clear:
             self.clear()
@@ -50,8 +48,6 @@ class EditorSceneClass(QGraphicsScene):
             for i in self.items():
                 if i.selected:
                     self.removeItem(i)
-
-
 
     def mouseDoubleClickEvent(self, event):
         self.addNode(event.scenePos())
@@ -66,12 +62,4 @@ class EditorSceneClass(QGraphicsScene):
             i.adjustPos()
         for i in self.selectedItems():
             i.checkCollision()
-
-
-
-
-
-
-
-
-
+            i.adjustXPos(self.items())
