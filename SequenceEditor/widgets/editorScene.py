@@ -30,14 +30,17 @@ class EditorSceneClass(QGraphicsScene):
 
     def addNode(self, pos=False):
         if not pos:
-            pos = QPoint(0, 0)
-        else:
-            self.lastXpos = pos.x() + 25 + self.lastXpos
-            self.lastYpos = pos.y() + 25 + self.lastYpos
             pos = QPoint(self.lastXpos, self.lastYpos)
+
+        else:
+            pos = QPoint(self.lastXpos, self.lastYpos)
+
         item = editorItem.EditorItemClass(self.grid, len(self.items())+1)
         self.addItem(item)
         item.setPos(pos)
+        self.lastXpos = pos.x()
+        self.lastYpos = pos.y() + item.h
+
 
     def deleteNode(self, clear = False):
         if clear:
