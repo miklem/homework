@@ -15,12 +15,13 @@ class EditorItemClass(QGraphicsItem):
         self.gapR = 40
         self.setAcceptHoverEvents(True)
         self.resizePadding = 10
-        self.resizeL = True
-        self.resizeR = True
+        self.resizeL = False
+        self.resizeR = False
         self.startPos = None
         self.setFlags(QGraphicsItem.ItemIsMovable | QGraphicsItem.ItemIsSelectable)
         self.selected = False
         self.fontSize = 10
+
 
     def boundingRect(self, *args, **kwargs):
         return QRectF(self.x, self.y, self.w, self.h)
@@ -45,7 +46,6 @@ class EditorItemClass(QGraphicsItem):
         painter.setPen(QPen(Qt.black))
         painter.drawText(rec, Qt.AlignCenter, 'Node {0}'.format(self.num))
         #coordinates
-
         if 140 < self.w < 250:
             painter.setFont(QFont("Arial", self.fontSize/1.5))
             painter.drawText(rec.adjusted(15, self.fontSize-2, 0, 0), Qt.AlignLeft, '{0};{1}'.format(self.pos().x(), self.pos().y()))
@@ -70,20 +70,33 @@ class EditorItemClass(QGraphicsItem):
         else:
             self.setPos(self.pos() - QPoint(0, delta))
 
+
     def adjustXPos(self, items):
         #store [item, startX, width, startY, height]
         xpos = [[x, x.pos().x(), x.w, x.pos().y(), x.h] for x in items]
+        #print self.boundingRect(self.pos())
 
         for item, x, w, y, h in xpos:
             if item != self:
                 if abs(self.pos().y() - y) < 2*h:
-                    delta_rl = self.pos().x() + self.w - x
-                    delta_rr = self.pos().x() + self.w - x - w
+                    print self.mapToParent(self.pos())
+                    delta_R_to_L = self.pos().x() + self.w - x
+                    delta_R_to_R = self.pos().x() + self.w - x - w
+                    delta_L_to_L = self.pos().x() - x
 
-                    #
-                    # if abs(delta_rl) < self.gapL:
-                    #     print"rl"
-                    #     self.setPos(self.pos() - QPoint(delta_rl, 0))
+
+
+                    #print delta_L_to_L
+                    if abs(delta_R_to_L) < self.gapL:
+                        self.setPos(self.pos() - QPoint(delta_R_to_L, 0))
+
+                    #print delta_R_to_R
+                    if abs(delta_R_to_R) < self.gapR:
+                        self.setPos(self.pos() - QPoint(delta_R_to_R, 0))
+
+                    #print delta_L_to_L
+                    if abs(delta_L_to_L) < self.gapL:
+                        self.setPos(self.pos() + QPoint(delta_L_to_L, 0))
                     #
                     # print delta_rr
                     # # if abs(delta_rr) < self.gapR:

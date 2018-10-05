@@ -39,7 +39,6 @@ class EditorSceneClass(QGraphicsScene):
         self.lastXpos = pos.x()
         self.lastYpos = pos.y() + item.h
 
-
     def deleteNode(self, clear = False):
         if clear:
             self.clear()
@@ -57,6 +56,8 @@ class EditorSceneClass(QGraphicsScene):
     def mouseReleaseEvent(self, event):
         self.fix_positions()
         super(EditorSceneClass, self).mouseReleaseEvent(event)
+
+
 
     def fix_positions(self):
         for i in self.items():

@@ -45,3 +45,18 @@ class EditorViewClass(QGraphicsView):
         super(EditorViewClass, self).mouseReleaseEvent(event)
         self.pan = False
 
+    def wheelEvent(self, event):
+        zoomInFactor = 1.2
+        zoomOutFactor = 1/zoomInFactor
+
+        if event.delta()>0:
+            zoom = zoomInFactor
+        else:
+            zoom = zoomOutFactor
+
+        self.scale(zoom, zoom)
+
+    def mouseWheelEvent(self, event):
+        super(EditorViewClass, self).wheelEvent(event)
+
+
