@@ -49,7 +49,7 @@ class EditorViewClass(QGraphicsView):
         zoomInFactor = 1.2
         zoomOutFactor = 1/zoomInFactor
 
-        if event.delta()>0:
+        if event.delta() > 0:
             zoom = zoomInFactor
         else:
             zoom = zoomOutFactor

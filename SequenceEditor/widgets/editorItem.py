@@ -11,8 +11,8 @@ class EditorItemClass(QGraphicsItem):
         self.h = height
         self.num = num
         self.hover = None
-        self.gapL = 40
-        self.gapR = 40
+        self.gapL = 60
+        self.gapR = 60
         self.setAcceptHoverEvents(True)
         self.resizePadding = 10
         self.resizeL = False
@@ -44,18 +44,31 @@ class EditorItemClass(QGraphicsItem):
         painter.fillRect(rec.adjusted(3, 3, -3, -3), color)
         painter.setFont(QFont("Arial", self.fontSize))
         painter.setPen(QPen(Qt.black))
-        painter.drawText(rec, Qt.AlignCenter, 'Node {0}'.format(self.num))
+
+        selected = self.sceneBoundingRect()
+        text = 'Node {0}'.format(self.num)
+        font = QFont("Arial", self.fontSize)
+        metrics = QFontMetrics(font).boundingRect(text)
+        if False:
+            metrics =QFontMetrics()
+        width = metrics.width()
+        elided = metrics.elidedText(text, Qt.ElideLeft, 35)
+        painter.drawText(rec, Qt.AlignCenter, elided)
         #coordinates
-        if 140 < self.w < 250:
-            painter.setFont(QFont("Arial", self.fontSize/1.5))
-            painter.drawText(rec.adjusted(15, self.fontSize-2, 0, 0), Qt.AlignLeft, '{0};{1}'.format(self.pos().x(), self.pos().y()))
-            painter.drawText(rec.adjusted(0, self.fontSize-2, -15, 0), Qt.AlignRight,
-                         '{0};{1}'.format(self.pos().x()+self.w, self.pos().y()+self.h))
-        if self.w >=250:
-            painter.drawText(rec.adjusted(15, self.fontSize - 2, 0, 0), Qt.AlignLeft,
-                             '{0};{1}'.format(self.pos().x(), self.pos().y()))
-            painter.drawText(rec.adjusted(0, self.fontSize - 2, -15, 0), Qt.AlignRight,
-                             '{0};{1}'.format(self.pos().x() + self.w, self.pos().y() + self.h))
+
+
+
+        # if 140 < self.w < 250:
+        #     painter.setFont(QFont("Arial", self.fontSize / 1.5))
+        #     painter.drawText(rec.adjusted(15, self.fontSize - 2, 0, 0), Qt.AlignLeft,
+        #                      '{0:.1f}'.format(selected.x()))
+        #     painter.drawText(rec.adjusted(0, self.fontSize - 2, -15, 0), Qt.AlignRight,
+        #                      '{0:.1f}'.format(selected.width()))
+        # if self.w >= 250:
+        #     painter.drawText(rec.adjusted(15, self.fontSize - 2, 0, 0), Qt.AlignLeft,
+        #                      '{0:.1f}'.format(selected.x()))
+        #     painter.drawText(rec.adjusted(0, self.fontSize - 2, -15, 0), Qt.AlignRight,
+        #                      '{0:.1f}'.format(selected.width()))
         #markers
         painter.setPen(Qt.NoPen)
         painter.fillRect(QRect(self.x + 4, 4, self.resizePadding, self.h - 8), Qt.red)
@@ -73,31 +86,50 @@ class EditorItemClass(QGraphicsItem):
 
     def adjustXPos(self, items):
         #store [item, startX, width, startY, height]
-        xpos = [[x, x.pos().x(), x.w, x.pos().y(), x.h] for x in items]
-        #print self.boundingRect(self.pos())
+        # xpos = [[x, x.pos().x(), x.w, x.pos().y(), x.h] for x in items]
+        xpos = [[x, x.sceneBoundingRect().x(), x.sceneBoundingRect().y(), x.sceneBoundingRect().width(),
+                 x.sceneBoundingRect().height()] for x in items]
 
-        for item, x, w, y, h in xpos:
+        for item, x, y, w, h in xpos:
             if item != self:
-                if abs(self.pos().y() - y) < 2*h:
-                    print self.mapToParent(self.pos())
-                    delta_R_to_L = self.pos().x() + self.w - x
-                    delta_R_to_R = self.pos().x() + self.w - x - w
-                    delta_L_to_L = self.pos().x() - x
+                selected = self.sceneBoundingRect()
+                delta_R_to_L = selected.x() + selected.width() - x
+                delta_R_to_R = selected.x() + selected.width() - x - w
+                delta_L_to_L = selected.x() - x
+                delta_L_to_R = selected.x() - x - w
+
+                print delta_R_to_L
+                if abs(delta_R_to_L) < self.gapL:
+                    self.setPos(self.pos() - QPoint(delta_R_to_L, 0))
+                print delta_R_to_R
+                if abs(delta_R_to_R) < self.gapR:
+                    self.setPos(self.pos() - QPoint(delta_R_to_R, 0))
+                print delta_L_to_L
+                if abs(delta_L_to_L) < self.gapL:
+                    self.setPos(self.pos() - QPoint(delta_L_to_L, 0))
+                print delta_L_to_R
+                if abs(delta_L_to_R) < self.gapR:
+                    self.setPos(self.pos() - QPoint(delta_L_to_R, 0))
 
 
-
-                    #print delta_L_to_L
-                    if abs(delta_R_to_L) < self.gapL:
-                        self.setPos(self.pos() - QPoint(delta_R_to_L, 0))
-
-                    #print delta_R_to_R
-                    if abs(delta_R_to_R) < self.gapR:
-                        self.setPos(self.pos() - QPoint(delta_R_to_R, 0))
-
-                    #print delta_L_to_L
-                    if abs(delta_L_to_L) < self.gapL:
-                        self.setPos(self.pos() + QPoint(delta_L_to_L, 0))
+                    # delta_R_to_L = self.pos().x() + self.w - x
+                    # delta_R_to_R = self.pos().x() + self.w - x - w
+                    # delta_L_to_L = self.pos().x() - x
                     #
+                    #
+                    #
+                    # #print delta_L_to_L
+                    # if abs(delta_R_to_L) < self.gapL:
+                    #     self.setPos(self.pos() - QPoint(delta_R_to_L, 0))
+                    # #
+                    # #print delta_R_to_R
+                    # if abs(delta_R_to_R) < self.gapR:
+                    #     self.setPos(self.pos() - QPoint(delta_R_to_R, 0))
+                    #
+                    # #print delta_L_to_L
+                    # if abs(delta_L_to_L) < self.gapL:
+                    #     self.setPos(self.pos() + QPoint(delta_L_to_L, 0))
+                    # #
                     # print delta_rr
                     # # if abs(delta_rr) < self.gapR:
                     # #     self.setPos(self.pos() - QPoint(delta_rr, 0))
@@ -183,8 +215,8 @@ class EditorItemClass(QGraphicsItem):
             delta = (self.startPos - event.pos()).x()
             self.startPos = event.pos()
             if self.resizeL:
-                tmp1= self.x
-                tmp2= self.w
+                tmp1 = self.x
+                tmp2 = self.w
                 self.x = self.x - delta
                 self.w = self.w + delta
                 if self.scene().collidingItems(self):
