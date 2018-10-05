@@ -31,10 +31,8 @@ class EditorSceneClass(QGraphicsScene):
     def addNode(self, pos=False):
         if not pos:
             pos = QPoint(self.lastXpos, self.lastYpos)
-
         else:
-            pos = QPoint(self.lastXpos, self.lastYpos)
-
+            pos = QPoint(pos.x(), pos.y())
         item = editorItem.EditorItemClass(self.grid, len(self.items())+1)
         self.addItem(item)
         item.setPos(pos)
