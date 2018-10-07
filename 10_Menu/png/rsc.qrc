@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="ico">
+    <file>download-1.png</file>
+    <file>upload-1.png</file>
+  </qresource>
+</RCC>
