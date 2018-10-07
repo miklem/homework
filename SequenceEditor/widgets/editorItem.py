@@ -21,6 +21,7 @@ class EditorItemClass(QGraphicsItem):
         self.setFlags(QGraphicsItem.ItemIsMovable | QGraphicsItem.ItemIsSelectable)
         self.selected = False
         self.fontSize = 10
+        self.roundness = 5
 
 
     def boundingRect(self, *args, **kwargs):
@@ -28,12 +29,11 @@ class EditorItemClass(QGraphicsItem):
 
     def paint(self, painter, options, widget):
         rec = self.boundingRect()
+        selectedItem = self.sceneBoundingRect()
         if False:
             painter = QPainter()
-        painter.fillRect(rec, Qt.black)
-        painter.fillRect(rec.adjusted(1, 1, -1, -1), Qt.white)
         if not self.hover:
-            color = Qt.gray
+            color = Qt.black
             self.selected = False
         else:
             color = Qt.darkGray
@@ -41,28 +41,46 @@ class EditorItemClass(QGraphicsItem):
         if self.isSelected():
             color = Qt.yellow
             self.selected = True
-        painter.fillRect(rec.adjusted(3, 3, -3, -3), color)
+
+        painter.setPen(QPen(color))
+        linearGradient = QLinearGradient(0, selectedItem.height(), 0, 0)
+        linearGradient.setColorAt(1.0, Qt.white)
+        linearGradient.setColorAt(0.0, color)
+        painter.setBrush(QBrush(linearGradient))
+        painter.setPen(QPen(color))
+        painter.drawRoundedRect(rec, self.roundness, self.roundness)
+
         painter.setFont(QFont("Arial", self.fontSize))
         painter.setPen(QPen(Qt.black))
 
-        selectedItem = self.sceneBoundingRect()
         text = 'Node {0}'.format(self.num)
         font = QFont("Arial", self.fontSize)
         elided = self.elideText(selectedItem, text, font)  # note: truncate text to make it look nicer
         painter.drawText(rec, Qt.AlignCenter, elided)
 
         # coordinates
-        font = QFont("Arial", self.fontSize )
+        font = QFont("Arial", self.fontSize)
         painter.setFont(font)
-        textL = self.elideText(rec.adjusted(15, self.fontSize - 2, 0, 0), '{0:.1f}'.format(selectedItem.x()), font)
-        textR = self.elideText(rec.adjusted(0, self.fontSize - 2, -15, 0), '{0:.1f}'.format(selectedItem.width()), font)
-        painter.drawText(rec.adjusted(15, self.fontSize - 2, 0, 0), Qt.AlignLeft, textL)
-        painter.drawText(rec.adjusted(0, self.fontSize - 2, -15, 0), Qt.AlignRight, textR)
+        textPos = (selectedItem.height() / 2) - self.fontSize / 2
+        textL = self.elideText(rec.adjusted(15, textPos, 0, 0), '{0:.1f}'.format(selectedItem.x()), font)
+        textR = self.elideText(rec.adjusted(0, textPos, -15, 0), '{0:.1f}'.format(selectedItem.width()), font)
+        painter.drawText(rec.adjusted(15, textPos, 0, 0), Qt.AlignLeft, textL)
+        painter.drawText(rec.adjusted(0, textPos, -15, 0), Qt.AlignRight, textR)
 
-        #markers
-        painter.setPen(Qt.NoPen)
-        painter.fillRect(QRect(self.x + 4, 4, self.resizePadding, self.h - 8), Qt.red)
-        painter.fillRect(QRect(self.x + self.w - 4 - self.resizePadding, 4, self.resizePadding, self.h - 8), Qt.red)
+        # markers
+        if not self.hover:
+            pass
+        else:
+            linearGradient2 = QLinearGradient(rec.bottomLeft(), rec.bottomRight())
+            linearGradient2.setColorAt(0, Qt.red)
+            linearGradient2.setColorAt(0.1, QColor(255, 255, 255, 0))
+            linearGradient2.setColorAt(0.9, QColor(255, 255, 255, 0))
+            linearGradient2.setColorAt(1, Qt.red)
+            painter.setBrush(QBrush(linearGradient2))
+            painter.drawRoundedRect(rec, self.roundness, self.roundness)
+
+
+
 
     def elideText(self, item, text, font):
         metrics = QFontMetrics(font)
@@ -91,23 +109,19 @@ class EditorItemClass(QGraphicsItem):
         for item, x, y, w, h in xpos:
             if item != self:
                 selected = self.sceneBoundingRect()
-                delta_R_to_L = selected.x() + selected.width() - x
-                delta_R_to_R = selected.x() + selected.width() - x - w
-                delta_L_to_L = selected.x() - x
-                delta_L_to_R = selected.x() - x - w
-
-                print delta_R_to_L
-                if abs(delta_R_to_L) < self.gapL:
-                    self.setPos(self.pos() - QPoint(delta_R_to_L, 0))
-                print delta_R_to_R
-                if abs(delta_R_to_R) < self.gapR:
-                    self.setPos(self.pos() - QPoint(delta_R_to_R, 0))
-                print delta_L_to_L
-                if abs(delta_L_to_L) < self.gapL:
-                    self.setPos(self.pos() - QPoint(delta_L_to_L, 0))
-                print delta_L_to_R
-                if abs(delta_L_to_R) < self.gapR:
-                    self.setPos(self.pos() - QPoint(delta_L_to_R, 0))
+                if abs(selected.y() - y) < 2 * h:
+                    delta_R_to_L = selected.x() + selected.width() - x
+                    delta_R_to_R = selected.x() + selected.width() - x - w
+                    delta_L_to_L = selected.x() - x
+                    delta_L_to_R = selected.x() - x - w
+                    if abs(delta_R_to_L) < self.gapL:
+                        self.setPos(self.pos() - QPoint(delta_R_to_L, 0))
+                    if abs(delta_R_to_R) < self.gapR:
+                        self.setPos(self.pos() - QPoint(delta_R_to_R, 0))
+                    if abs(delta_L_to_L) < self.gapL:
+                        self.setPos(self.pos() - QPoint(delta_L_to_L, 0))
+                    if abs(delta_L_to_R) < self.gapR:
+                        self.setPos(self.pos() - QPoint(delta_L_to_R, 0))
 
     def checkCollision(self):
         coll = self.scene().collidingItems(self)

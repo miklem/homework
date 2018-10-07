@@ -7,7 +7,7 @@ class EditorSceneClass(QGraphicsScene):
     def __init__(self):
         super(EditorSceneClass, self).__init__()
         self.setSceneRect(-1000, -1000, 2000, 2000)
-        self.grid = 30
+        self.grid = 45
         self.lastXpos = 0
         self.lastYpos = 0
         self.addNode()
@@ -38,6 +38,14 @@ class EditorSceneClass(QGraphicsScene):
         item.setPos(pos)
         self.lastXpos = pos.x()
         self.lastYpos = pos.y() + item.h
+
+        # #check this
+        # if self.collidingItems(item):
+        #     pos = QPoint(pos.x(), self.lastYpos+pos.y())
+        #     item.setPos(pos)
+
+
+
 
     def deleteNode(self, clear = False):
         if clear:

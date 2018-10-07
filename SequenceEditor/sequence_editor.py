@@ -18,7 +18,6 @@ class EditorWindowClass(QMainWindow, ui.Ui_SequenceEditor_window):
 
 
     def add_item(self):
-
         self.view.s.addNode()
         self.view.s.fix_positions()
 
