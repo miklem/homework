@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/04_files" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/09_projManager/homework_projectManager" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/09_projManager/projectManager" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/09_projManager/projectManager/projectManager" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/13_CustomWidget" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/14_GraphScene/GraphEditor" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/14_GraphScene/GraphEditor/homework" vcs="Git" />
+  </component>
+</project>
