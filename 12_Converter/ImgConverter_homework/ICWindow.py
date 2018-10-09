@@ -7,7 +7,7 @@ from widgets import ExtList
 from widgets import LineEdit
 from widgets import ComboBox
 import converter_uis as ui
-from converterEngine import convEngine
+import converterEngine as convEngine
 from IC_settings import settings
 import Tkinter
 import tkFileDialog

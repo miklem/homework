@@ -6,6 +6,7 @@
       <sourceFolder url="file://$MODULE_DIR$/13_CustomWidget" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/14_GraphScene/GraphEditor/homework/SequenceEditor/widgets" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/15_QtStyle/widgets" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/12_Converter/imageConverter" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/14_GraphScene/GraphEditor/SequenceEditor" />
       <excludeFolder url="file://$MODULE_DIR$/14_GraphScene/temp" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />

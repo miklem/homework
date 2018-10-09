@@ -1,7 +1,7 @@
 from PySide.QtGui import *
 from PySide.QtCore import *
 import os
-from imageConverter import converter
+import converter
 
 import iConverter_uis as ui
 from widgets import filesWidget
