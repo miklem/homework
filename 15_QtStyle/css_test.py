@@ -10,7 +10,9 @@ class StyleWidgetClass(QMainWindow, ui.Ui_testUi):
     def __init__(self):
         super(StyleWidgetClass, self).__init__()
         self.setupUi(self)
+        self.treeWidget.setAlternatingRowColors(1)
         self.pushButton.clicked.connect(self.assignCSS)
+        self.setWindowFlags(Qt.WindowStaysOnTopHint)
 
     def assignCSS(self):
         self.setStyleSheet(open(style).read())
