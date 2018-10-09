@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'E:\GoogleDrive\3D\Python\education\15_QtStyle\widgets\css_test.ui'
 #
-# Created: Sun Oct  7 19:41:07 2018
+# Created: Tue Oct  9 23:19:05 2018
 #      by: pyside-uic 0.2.15 running on PySide 1.2.4
 #
 # WARNING! All changes made in this file will be lost!
@@ -82,6 +82,19 @@ class Ui_testUi(object):
         self.statusbar = QtGui.QStatusBar(testUi)
         self.statusbar.setObjectName("statusbar")
         testUi.setStatusBar(self.statusbar)
+        self.actionFile = QtGui.QAction(testUi)
+        self.actionFile.setObjectName("actionFile")
+        self.actionOpen = QtGui.QAction(testUi)
+        self.actionOpen.setObjectName("actionOpen")
+        self.actionQuit = QtGui.QAction(testUi)
+        self.actionQuit.setObjectName("actionQuit")
+        self.actionAbout = QtGui.QAction(testUi)
+        self.actionAbout.setObjectName("actionAbout")
+        self.menuFile.addAction(self.actionFile)
+        self.menuFile.addAction(self.actionOpen)
+        self.menuFile.addSeparator()
+        self.menuFile.addAction(self.actionQuit)
+        self.menuHelp.addAction(self.actionAbout)
         self.menubar.addAction(self.menuFile.menuAction())
         self.menubar.addAction(self.menuHelp.menuAction())
 
@@ -107,4 +120,8 @@ class Ui_testUi(object):
         self.comboBox.setItemText(1, QtGui.QApplication.translate("testUi", "item_2", None, QtGui.QApplication.UnicodeUTF8))
         self.menuFile.setTitle(QtGui.QApplication.translate("testUi", "File", None, QtGui.QApplication.UnicodeUTF8))
         self.menuHelp.setTitle(QtGui.QApplication.translate("testUi", "Help", None, QtGui.QApplication.UnicodeUTF8))
+        self.actionFile.setText(QtGui.QApplication.translate("testUi", "File", None, QtGui.QApplication.UnicodeUTF8))
+        self.actionOpen.setText(QtGui.QApplication.translate("testUi", "Open", None, QtGui.QApplication.UnicodeUTF8))
+        self.actionQuit.setText(QtGui.QApplication.translate("testUi", "Quit", None, QtGui.QApplication.UnicodeUTF8))
+        self.actionAbout.setText(QtGui.QApplication.translate("testUi", "About", None, QtGui.QApplication.UnicodeUTF8))
 

@@ -10,11 +10,8 @@ class StyleWidgetClass(QMainWindow, ui.Ui_testUi):
     def __init__(self):
         super(StyleWidgetClass, self).__init__()
         self.setupUi(self)
-<<<<<<< HEAD
         # check if the file exists
         self.setStyleSheet(open(style).read())
-        
-=======
         self.treeWidget.setAlternatingRowColors(1)
         self.pushButton.clicked.connect(self.assignCSS)
         self.setWindowFlags(Qt.WindowStaysOnTopHint)
@@ -22,7 +19,6 @@ class StyleWidgetClass(QMainWindow, ui.Ui_testUi):
     def assignCSS(self):
         self.setStyleSheet(open(style).read())
 
->>>>>>> master
         
 if __name__ == '__main__':
     app = QApplication([])

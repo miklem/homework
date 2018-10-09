@@ -139,11 +139,98 @@ QComboBox::down-arrow
     height: 10px;
 }
 
-Qdial
+QSpinBox
 {
+    padding-right: 15px; /* make room for the arrows */
+    padding-top: 3px;
+
+    border: 1px solid #808080;
     
 
 }
+
+QSpinBox::up-button {
+    subcontrol-origin: border;
+    subcontrol-position: top right; /* position at the top right corner */
+    width: 16px; /* 16 + 2*1px border-width = 15px padding + 3px parent border */
+}
+
+
+
+
+QSpinBox::down-button {
+    subcontrol-origin: border;
+    subcontrol-position: bottom right; /* position at bottom right corner */
+    width: 16px;
+    image: url(ico/arrow_down.png);
+
+}
+
+QSpinBox::down-button, QSpinBox::up-button
+{
+    border: 1px solid #808080;
+    border-bottom: none;
+    border-top: none;
+    border-radius: 0;
+}
+
+QSpinBox::up-button:pressed,QSpinBox::down-button:pressed
+{
+    background-color: #828282;
+}
+
+
+QProgressBar
+{
+    border: 1px solid #808080;
+    border-radius: 2px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 10em;
+    color: #00FF5D;
+    
+}
+
+QProgressBar:chunk
+{
+    background-color: #5a5a5a;
+    width: 10px;
+    margin: 1px;
+}
+
+QMenuBar::item
+{
+    background: transparent;
+}
+
+QMenuBar::item:selected
+{
+    background-color: #555555;
+    color: #fff;
+}
+
+QMenuBar::item:pressed
+{
+    border: 1px solid #000;
+    background-color: #252525;
+}
+
+Qmenu
+{
+    border: 1px solid #000;
+}
+
+QMenu::Item
+{
+    padding: 2px 20px 2px 20px;
+}
+
+QMenu::item:selected
+{
+    color: #fff;
+    background-color: #555555;
+}
+
 
 
 
