@@ -11,7 +11,6 @@ class StyleWidgetClass(QMainWindow, ui.Ui_testUi):
         super(StyleWidgetClass, self).__init__()
         self.setupUi(self)
         # check if the file exists
-
         self.treeWidget.setAlternatingRowColors(1)
         self.pushButton.clicked.connect(self.assignCSS)
         self.setWindowFlags(Qt.WindowStaysOnTopHint)

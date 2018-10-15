@@ -1,6 +1,9 @@
 from PySide.QtGui import *
 from PySide.QtCore import *
+
 import os
+
+
 
 from widgets import SourceFilesList
 from widgets import ExtList
@@ -14,10 +17,23 @@ import tkFileDialog
 
 
 
+
+
+
+
+
+
+update=False
+
+
+
+
+
 class ImageConverterMainClass(QMainWindow, ui.Ui_ImgConverter):
     def __init__(self):
         super(ImageConverterMainClass, self).__init__()
         self.setupUi(self)
+
         self.filesList = SourceFilesList.SourceFilesListClass()
         self.sourceFiles_ly.addWidget(self.filesList)
         self.setWindowFlags(Qt.WindowStaysOnTopHint)
@@ -43,6 +59,15 @@ class ImageConverterMainClass(QMainWindow, ui.Ui_ImgConverter):
         self.img_btn.clicked.connect(self.add_img_to_src)
         self.delAll_btn.clicked.connect(self.filesList.del_all_item)
 
+        self.pathToWatch = os.path.dirname(__file__)
+        self.style = os.path.join(os.path.dirname(__file__), 'IC.css')
+
+        self.fs_watcher = QFileSystemWatcher([self.pathToWatch, self.style])
+        self.fs_watcher.directoryChanged.connect(self.directory_changed)
+        self.fs_watcher.fileChanged.connect(self.file_changed)
+
+        print update
+
         # start
         settings.set_values('convert_to_ext', '.jpg')
         if not settings.parameters.get('convert_to_ext') == ".jpg":
@@ -56,6 +81,7 @@ class ImageConverterMainClass(QMainWindow, ui.Ui_ImgConverter):
         self.__fill_extensions()
         root = Tkinter.Tk()
         root.withdraw()
+
 
     def mousePressEvent(self, event):
         pass
@@ -144,6 +170,11 @@ class ImageConverterMainClass(QMainWindow, ui.Ui_ImgConverter):
         if os.path.isfile(path):
             self.filesList.add_object(path)
 
+    def directory_changed(self):
+        print('Directory Changed!!!')
+
+    def file_changed(self):
+        print('File Changed!!!')
 
 if __name__ == '__main__':
     app = QApplication([])
