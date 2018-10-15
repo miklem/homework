@@ -37,7 +37,7 @@ QPushButton:pressed
 {
     background-color: QLinearGradient(x1:0, y1:0,
     x2: 0, y2:1,
-    stop: 0 #2b2b2b, stop: 1 #2b2b2b); 
+    stop: 0 #2b2b2b, stop: 1 #1bfa69); 
 }
 
 QSlider::groove:horizontal 
@@ -193,7 +193,7 @@ QProgressBar
 
 QProgressBar:chunk
 {
-    background-color: #5a5a5a;
+    background-color: #ff040b;
     width: 10px;
     margin: 1px;
 }
