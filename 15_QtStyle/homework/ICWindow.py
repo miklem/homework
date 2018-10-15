@@ -175,6 +175,12 @@ class ImageConverterMainClass(QMainWindow, ui.Ui_ImgConverter):
 
     def file_changed(self):
         print('File Changed!!!')
+        try:
+            result = self.setStyleSheet(open(self.style).read())
+            print result
+        except:
+            print "error in CSS"
+
 
 if __name__ == '__main__':
     app = QApplication([])
