@@ -70,7 +70,7 @@ class ImageConverterMainClass(QMainWindow, ui.Ui_ImgConverter):
         #self.progressBar.setValue(75)
 
 
-        print update
+
 
         # start
         self.setStyleSheet(open(self.style).read())
@@ -179,12 +179,11 @@ class ImageConverterMainClass(QMainWindow, ui.Ui_ImgConverter):
         print('Directory Changed!!!')
 
     def file_changed(self):
-        print('File Changed!!!')
+
         try:
             self.setStyleSheet(open(self.style).read())
-
         except:
-            print "error in CSS"
+            pass
 
 
 if __name__ == '__main__':
