@@ -1,5 +1,184 @@
 QWidget
 {
-    background-color: #323232;
-    color: #f0d3d3;
+    background-color: #444444;
+    color: #a7a7a7;
+}
+
+QLineEdit
+{
+    border: 1px solid #727272;
+    border-radius: 3px;
+    background-color: #2b2b2b;
+    selection-background-color: #3AAFB9;
+
+}
+
+QPushButton
+{
+    height: 8px;
+    border-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+    padding: 5px;
+    background-color: #297373;
+}
+
+QPushButton:hover
+{
+    border-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+    padding: 5px;
+    background-color: #3AAFB9;
+    color: #444444;
+}
+
+QPushButton:pressed
+{
+    border-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+    padding: 5px;
+    background-color: #1D99A5;
+}
+
+QListWidget
+{
+    alternate-background-color:#505050;
+    border: 1px solid #727272;
+    border-radius: 3px;
+
+}
+
+QListView::item:selected {
+    color:#b7b700;
+    
+}
+
+QListView::indicator{
+
+    width:20px;
+    height: 20px;
+
+}
+
+QListView::text
+{
+    margin: 10px;
+}
+
+
+QListView::indicator:checked{
+    image: url(res/checkbox_on.png);
+    width:20px;
+}
+QListView::indicator:unchecked{
+    image: url(res/checkbox_off.png)
+}
+
+QSpinBox
+{
+    border: 1px solid #727272;
+    border-radius: 3px;
+    padding-right: 4%; /* make room for the arrows */
+    padding-top: 15%;
+    margin: 3%;
+    padding: 5%; /*allign text*/
+}
+QSpinBox::up-button {
+    width: 20%;
+    height: 10%;
+}
+QSpinBox::down-button {
+    width: 20%;
+    height: 10%;
+}
+
+QCheckBox:indicator:checked
+{
+    image: url(res/checkbox_on.png);
+    width: 25%;
+    height: 25%;
+}
+QCheckBox:indicator:unchecked
+{
+    image: url(res/checkbox_off.png);
+    width: 25%;
+    height: 25%;
+}
+
+QSpinBox::down-arrow:disabled,QSpinBox::up-arrow:disabled { /* off state when value in min */
+   image: url(none)
+}
+
+QSlider::groove:horizontal 
+{
+    border: 1px solid gray;
+    height: 5px; /* the groove expands to the size of the slider by default. by giving it a height, it has a fixed size */
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #B1B1B1, stop:1 #c4c4c4);
+    margin: 2px 0;
+    border-radius:3px;
+}
+
+
+QSlider::handle:horizontal 
+{
+    background: #297373;
+    width: 11%;
+    height: 20%;
+    margin: -8px 0; /* handle is placed by default on the contents rect of the groove. Expand outside the groove */
+    border-radius: 5px;
+}
+QSlider::handle:horizontal:hover
+{
+    background: #3AAFB9;
+    width: 11%;
+    height: 20%;
+    margin: -8px 0; /* handle is placed by default on the contents rect of the groove. Expand outside the groove */
+    border-radius: 5px;
+}
+
+QSlider::handle:horizontal:pressed
+{
+    background: #1D99A5;
+    width: 11%;
+    height: 20%;
+    margin: -8px 0; /* handle is placed by default on the contents rect of the groove. Expand outside the groove */
+    border-radius: 5px;
+}
+
+QProgressBar
+{
+    border: 1px solid #a7a7a7;
+    height: 17px;
+    border-radius: 3px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 10em;
+    color: #b7b700;
+    
+}
+
+QProgressBar:chunk
+{
+
+    background-color: #1f7575;
+    width: 10px;
+    margin: 1px;
+}
+
+
+QComboBox {
+    border: 1px solid #a7a7a7;
+    border-radius: 3px;
+    margin: 3px;
+    padding: 1px 18px 3px 5px;
+    min-width: 7em;
+    height: 15px;
+}
+
+QComboBox QAbstractItemView {
+    
+    border: 1px solid darkgray;
+    selection-background-color: #3AAFB9;
 }

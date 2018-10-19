@@ -10,6 +10,7 @@ class ComboBoxClass(QComboBox):
         self.load_ext()
         self.currentIndexChanged.connect(self.index_changed)
 
+
     def load_ext(self, converter='iconvert'):
         self.addItems(settings.parameters.get(converter))
         # set jpg as default parameter

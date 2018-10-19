@@ -59,16 +59,21 @@ class ImageConverterMainClass(QMainWindow, ui.Ui_ImgConverter):
         self.img_btn.clicked.connect(self.add_img_to_src)
         self.delAll_btn.clicked.connect(self.filesList.del_all_item)
 
+        #CSS homework. Autoload css file on update.
         self.pathToWatch = os.path.dirname(__file__)
         self.style = os.path.join(os.path.dirname(__file__), 'IC.css')
-
         self.fs_watcher = QFileSystemWatcher([self.pathToWatch, self.style])
         self.fs_watcher.directoryChanged.connect(self.directory_changed)
         self.fs_watcher.fileChanged.connect(self.file_changed)
 
+        #check progress bar
+        #self.progressBar.setValue(75)
+
+
         print update
 
         # start
+        self.setStyleSheet(open(self.style).read())
         settings.set_values('convert_to_ext', '.jpg')
         if not settings.parameters.get('convert_to_ext') == ".jpg":
             self.compression_chb.setEnabled(0)
@@ -176,8 +181,8 @@ class ImageConverterMainClass(QMainWindow, ui.Ui_ImgConverter):
     def file_changed(self):
         print('File Changed!!!')
         try:
-            result = self.setStyleSheet(open(self.style).read())
-            print result
+            self.setStyleSheet(open(self.style).read())
+
         except:
             print "error in CSS"
 

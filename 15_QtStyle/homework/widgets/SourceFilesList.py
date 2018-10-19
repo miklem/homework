@@ -10,6 +10,7 @@ class SourceFilesListClass(QListWidget):
         self.setDragDropMode(QAbstractItemView.DragDrop)
         self.setViewMode(QListView.ListMode)
         self.setIconSize(QSize(32, 32))
+        self.setAlternatingRowColors(True)
         # self.files = []
         # self.paths = []
 
