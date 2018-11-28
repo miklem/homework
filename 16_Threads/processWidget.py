@@ -28,14 +28,19 @@ class WorkerClass(QWidget):
         self.p.finished.connect(self.finish)
         self.p.readyRead.connect(self.readOut)
         self.p.start(worker)
+        self.start_btn.setEnabled(0)
 
 
     def readOut(self):
-        out = self.p.readAll()
-        print out
+        out = str(self.p.readAll()).strip() #return QByteArray. Check how to convert it properly to str
+        self.showMsg(out)
 
     def finish(self):
-        print 'Finish'
+        self.start_btn.setEnabled(1)
+        self.showMsg("Done")
+
+    def showMsg(self, msg):
+        self.out.append(msg)
 
 
 if __name__ == '__main__':

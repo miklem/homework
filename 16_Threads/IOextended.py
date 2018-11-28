@@ -12,7 +12,7 @@ class IOextendedClass(object):
             print path
             if os.path.isfile(path):
                 "IO: file was found"
-                return "r{0}".format(path)
+                return "{0}".format(path)
             else:
                 print "{0} not exist or not a file".format("E:\GoogleDrive\3D\Python\education\16_Threads\worker.py")
         else:
