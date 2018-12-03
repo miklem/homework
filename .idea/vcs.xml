@@ -5,6 +5,7 @@
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/04_files" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/09_projManager/homework_projectManager" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/09_projManager/homework_projectManager/homework_projectManager" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/09_projManager/projectManager" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/09_projManager/projectManager/projectManager" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/13_CustomWidget" vcs="Git" />

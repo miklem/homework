@@ -15,6 +15,7 @@ a = Analysis(['widget.py'],
              win_private_assemblies=False,
              cipher=block_cipher,
              noarchive=False)
+a.binaries += [('imageformats/qjpeg4.dll','C:/Users/mmiroshnichenko/AppData/Roaming/Python/Python27/site-packages/PySide/plugins/imageformats/qjpeg4.dll')]
 pyz = PYZ(a.pure, a.zipped_data,
              cipher=block_cipher)
 exe = EXE(pyz,
@@ -26,6 +27,5 @@ exe = EXE(pyz,
           upx=True,
           name=name,
 		  debug=False,
-          console=False,
-		  icon = 'icon.ico')
+          icon = 'icon.ico')
 
