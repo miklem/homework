@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="edecfa29-7a2c-4405-8822-43df024ef132" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/unit_test/mpkg/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_test/mpkg/lecture04.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unit_test/mpkg/test_lecture04.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/unit_test/mpkg/test/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/mmiroshnichenko.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/mmiroshnichenko.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/education.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/education.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09_projManager/homework_projectManager/homework_projectManager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/09_projManager/homework_projectManager/homework_projectManager/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09_projManager/homework_projectManager/homework_projectManager/projectManager_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/09_projManager/homework_projectManager/homework_projectManager/projectManager_main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unit_test/mpkg/lecture04.py" beforeDir="false" afterPath="$PROJECT_DIR$/unit_test/mpkg/lecture04.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unit_test/mpkg/test_lecture04.py" beforeDir="false" afterPath="$PROJECT_DIR$/unit_test/mpkg/test/test_lecture04.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unit_test/mpkg/test_stuff.py" beforeDir="false" afterPath="$PROJECT_DIR$/unit_test/mpkg/test/test_stuff.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,23 +19,23 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.36301368">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/unit_test/mpkg/test_stuff.py">
+            <entry file="file://$PROJECT_DIR$/unit_test/mpkg/test/test_stuff.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="228">
-                  <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+                  <caret line="12" selection-start-line="12" selection-end-line="12" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/unit_test/mpkg/test_lecture04.py">
+            <entry file="file://$PROJECT_DIR$/unit_test/mpkg/test/test_lecture04.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="266">
-                  <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+                <state relative-caret-position="624">
+                  <caret line="33" column="11" lean-forward="true" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
                   <folding>
                     <element signature="e#0#15#0" expanded="true" />
                   </folding>
@@ -44,17 +46,39 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/unit_test/mpkg/lecture04.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="38">
-                  <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
+        <splitter split-orientation="horizontal" split-proportion="0.60876757">
+          <split-first>
+            <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+              <file pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/unit_test/mpkg/lecture04.py">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="266">
+                      <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file pinned="false" current-in-tab="true">
+                <entry file="mock:///Local">
+                  <provider selected="true" editor-type-id="terminal-session-editor" />
+                </entry>
+              </file>
+            </leaf>
+          </split-first>
+          <split-second>
+            <leaf>
+              <file pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/unit_test/mpkg/lecture04.py">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="19">
+                      <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+            </leaf>
+          </split-second>
+        </splitter>
       </split-second>
     </splitter>
   </component>
@@ -83,6 +107,7 @@
         <option value="$PROJECT_DIR$/U_testing_01/test01.py" />
         <option value="$PROJECT_DIR$/U_testing_01/test_stuff.py" />
         <option value="$PROJECT_DIR$/unit_test/mpkg/test_lecture04.py" />
+        <option value="$PROJECT_DIR$/unit_test/mpkg/test/test_lecture04.py" />
         <option value="$PROJECT_DIR$/unit_test/mpkg/lecture04.py" />
       </list>
     </option>
@@ -120,6 +145,13 @@
               <item name="unit_test" type="462c0819:PsiDirectoryNode" />
               <item name="mpkg" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="homework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="homework" type="462c0819:PsiDirectoryNode" />
+              <item name="unit_test" type="462c0819:PsiDirectoryNode" />
+              <item name="mpkg" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -127,11 +159,12 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
+    <property name="last_opened_file_path" value="E:/venvs/fbx_test" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\GoogleDrive\Dev\Code\homework\unit_test\mpkg\test" />
       <recent name="E:\GoogleDrive\Dev\Code\homework\unit_test\mpkg" />
       <recent name="E:\GoogleDrive\Dev\Code\homework\18_network\widgets" />
     </key>
@@ -290,11 +323,11 @@
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16965227" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.12170706" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49947312" weight="0.32941177" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49841937" weight="0.18431373" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -302,9 +335,9 @@
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49947312" weight="0.32941177" />
       <window_info anchor="bottom" id="Maya Log" order="7" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49947312" weight="0.32941177" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.7744995" visible="true" weight="0.32941177" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.22550052" side_tool="true" visible="true" weight="0.32941177" />
-      <window_info anchor="bottom" id="Python Console" order="11" sideWeight="0.49894625" weight="0.32941177" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.7729189" weight="0.24509804" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="10" sideWeight="0.50052685" side_tool="true" visible="true" weight="0.24509804" />
+      <window_info anchor="bottom" id="Python Console" order="11" sideWeight="0.49841937" weight="0.32941177" />
       <window_info anchor="bottom" id="MayaLog" order="12" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -320,6 +353,7 @@
       <path value="$PROJECT_DIR$/13_CustomWidget" />
       <path value="$PROJECT_DIR$/14_GraphScene/GraphEditor" />
       <path value="$PROJECT_DIR$/14_GraphScene/GraphEditor/homework" />
+      <path value="$PROJECT_DIR$/09_projManager/homework_projectManager/homework_projectManager" />
     </ignored-roots>
   </component>
   <component name="editorHistoryManager">
@@ -380,13 +414,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/U_testing_01/test_stuff.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/U_testing_01/test_stuff.py" />
     <entry file="file://$PROJECT_DIR$/18_network/client_socket.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="522">
@@ -423,27 +451,27 @@
     <entry file="file://$PROJECT_DIR$/unit_test/mpkg/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/unit_test/mpkg/test_stuff.py">
+    <entry file="file://$PROJECT_DIR$/unit_test/mpkg/test/test_stuff.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unit_test/mpkg/test_lecture04.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/unit_test/mpkg/lecture04.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+        <state relative-caret-position="266">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unit_test/mpkg/test/test_lecture04.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="33" column="11" lean-forward="true" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
