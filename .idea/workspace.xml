@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="edecfa29-7a2c-4405-8822-43df024ef132" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/mmiroshnichenko.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/mmiroshnichenko.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/education.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/education.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unit_test/mpkg/lecture04.py" beforeDir="false" afterPath="$PROJECT_DIR$/unit_test/mpkg/lecture04.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unit_test/mpkg/test/test_lecture04.py" beforeDir="false" afterPath="$PROJECT_DIR$/unit_test/mpkg/test/test_lecture04.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ninja_game/sources/test/test_weapon.py" beforeDir="false" afterPath="$PROJECT_DIR$/ninja_game/sources/test/test_weapon.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ninja_game/sources/weapon.py" beforeDir="false" afterPath="$PROJECT_DIR$/ninja_game/sources/weapon.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,10 +19,15 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/ninja_game/sources/test/test_weapon.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="266">
-                  <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+                <state relative-caret-position="608">
+                  <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
                   <folding>
                     <element signature="e#0#15#0" expanded="true" />
+                    <element signature="e#143#236#2" />
+                    <element signature="e#411#540#2" />
+                    <element signature="e#415#510#1" />
+                    <element signature="e#1281#1359#2" />
+                    <element signature="e#1441#1520#2" />
                   </folding>
                 </state>
               </provider>
@@ -37,8 +40,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/ninja_game/sources/weapon.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="19">
-                  <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
+                <state relative-caret-position="209">
+                  <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
                 </state>
               </provider>
             </entry>
@@ -91,6 +94,7 @@
         <option value="$PROJECT_DIR$/ninja_game/__init__.py" />
         <option value="$PROJECT_DIR$/ninja_game/weapon.py" />
         <option value="$PROJECT_DIR$/ninja_game/test/test_weapon.py" />
+        <option value="$PROJECT_DIR$/ninja_game/sources/weapon.py" />
         <option value="$PROJECT_DIR$/ninja_game/sources/test/test_weapon.py" />
       </list>
     </option>
@@ -323,6 +327,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12170706" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -549,17 +554,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ninja_game/sources/weapon.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
+        <state relative-caret-position="209">
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ninja_game/sources/test/test_weapon.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="608">
+          <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#143#236#2" />
+            <element signature="e#411#540#2" />
+            <element signature="e#415#510#1" />
+            <element signature="e#1281#1359#2" />
+            <element signature="e#1441#1520#2" />
           </folding>
         </state>
       </provider>
