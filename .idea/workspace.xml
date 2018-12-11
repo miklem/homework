@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="edecfa29-7a2c-4405-8822-43df024ef132" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/unit_test/mpkg/test/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dictionaries/mmiroshnichenko.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/mmiroshnichenko.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/education.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/education.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/unit_test/mpkg/lecture04.py" beforeDir="false" afterPath="$PROJECT_DIR$/unit_test/mpkg/lecture04.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unit_test/mpkg/test_lecture04.py" beforeDir="false" afterPath="$PROJECT_DIR$/unit_test/mpkg/test/test_lecture04.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/unit_test/mpkg/test_stuff.py" beforeDir="false" afterPath="$PROJECT_DIR$/unit_test/mpkg/test/test_stuff.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unit_test/mpkg/test/test_lecture04.py" beforeDir="false" afterPath="$PROJECT_DIR$/unit_test/mpkg/test/test_lecture04.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,23 +15,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.36301368">
+    <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/unit_test/mpkg/test/test_stuff.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="228">
-                  <caret line="12" selection-start-line="12" selection-end-line="12" />
-                </state>
-              </provider>
-            </entry>
-          </file>
+        <leaf>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/unit_test/mpkg/test/test_lecture04.py">
+            <entry file="file://$PROJECT_DIR$/ninja_game/sources/test/test_weapon.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="624">
-                  <caret line="33" column="11" lean-forward="true" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
+                <state relative-caret-position="266">
+                  <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
                   <folding>
                     <element signature="e#0#15#0" expanded="true" />
                   </folding>
@@ -46,39 +33,17 @@
         </leaf>
       </split-first>
       <split-second>
-        <splitter split-orientation="horizontal" split-proportion="0.60876757">
-          <split-first>
-            <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-              <file pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/unit_test/mpkg/lecture04.py">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="266">
-                      <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file pinned="false" current-in-tab="true">
-                <entry file="mock:///Local">
-                  <provider selected="true" editor-type-id="terminal-session-editor" />
-                </entry>
-              </file>
-            </leaf>
-          </split-first>
-          <split-second>
-            <leaf>
-              <file pinned="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/unit_test/mpkg/lecture04.py">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="19">
-                      <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-            </leaf>
-          </split-second>
-        </splitter>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/ninja_game/sources/weapon.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="19">
+                  <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
       </split-second>
     </splitter>
   </component>
@@ -107,10 +72,35 @@
         <option value="$PROJECT_DIR$/U_testing_01/test01.py" />
         <option value="$PROJECT_DIR$/U_testing_01/test_stuff.py" />
         <option value="$PROJECT_DIR$/unit_test/mpkg/test_lecture04.py" />
-        <option value="$PROJECT_DIR$/unit_test/mpkg/test/test_lecture04.py" />
         <option value="$PROJECT_DIR$/unit_test/mpkg/lecture04.py" />
+        <option value="$PROJECT_DIR$/unit_test/mpkg/test/test_lecture04.py" />
+        <option value="$PROJECT_DIR$/unit_test/mpkg/lecture11.py" />
+        <option value="$PROJECT_DIR$/ninja/weapons.py" />
+        <option value="$PROJECT_DIR$/ninja/test/__init__.py" />
+        <option value="$PROJECT_DIR$/ninja/__init__.py" />
+        <option value="$PROJECT_DIR$/ninja/test/test_weapons.py" />
+        <option value="$PROJECT_DIR$/unit_test/ninja/test/test_weapons.py" />
+        <option value="$PROJECT_DIR$/unit_test/ninja/weapons.py" />
+        <option value="$PROJECT_DIR$/unit_test/ninja/test_weapons.py" />
+        <option value="$PROJECT_DIR$/Ninja_game/test/__init__.py" />
+        <option value="$PROJECT_DIR$/Ninja_game/__init__.py" />
+        <option value="$PROJECT_DIR$/Ninja_game/weapon.py" />
+        <option value="$PROJECT_DIR$/Ninja_game/test/test_weapon.py" />
+        <option value="$PROJECT_DIR$/Ninja_game/test_weapon.py" />
+        <option value="$PROJECT_DIR$/ninja/source/test/test_weapons.py" />
+        <option value="$PROJECT_DIR$/ninja_game/__init__.py" />
+        <option value="$PROJECT_DIR$/ninja_game/weapon.py" />
+        <option value="$PROJECT_DIR$/ninja_game/test/test_weapon.py" />
+        <option value="$PROJECT_DIR$/ninja_game/sources/test/test_weapon.py" />
       </list>
     </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
@@ -126,7 +116,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -137,25 +126,31 @@
             <path>
               <item name="homework" type="b2602c69:ProjectViewProjectNode" />
               <item name="homework" type="462c0819:PsiDirectoryNode" />
-              <item name="unit_test" type="462c0819:PsiDirectoryNode" />
+              <item name="ninja_game" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="homework" type="b2602c69:ProjectViewProjectNode" />
               <item name="homework" type="462c0819:PsiDirectoryNode" />
-              <item name="unit_test" type="462c0819:PsiDirectoryNode" />
-              <item name="mpkg" type="462c0819:PsiDirectoryNode" />
+              <item name="ninja_game" type="462c0819:PsiDirectoryNode" />
+              <item name="sources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="homework" type="b2602c69:ProjectViewProjectNode" />
               <item name="homework" type="462c0819:PsiDirectoryNode" />
-              <item name="unit_test" type="462c0819:PsiDirectoryNode" />
-              <item name="mpkg" type="462c0819:PsiDirectoryNode" />
+              <item name="ninja_game" type="462c0819:PsiDirectoryNode" />
+              <item name="sources" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="homework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="homework" type="462c0819:PsiDirectoryNode" />
+              <item name="unit_test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -163,10 +158,16 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\GoogleDrive\Dev\Code\homework\unit_test\ninja\test" />
+      <recent name="E:\GoogleDrive\Dev\Code\homework\unit_test\ninja" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\GoogleDrive\Dev\Code\homework\unit_test\mpkg\test" />
-      <recent name="E:\GoogleDrive\Dev\Code\homework\unit_test\mpkg" />
-      <recent name="E:\GoogleDrive\Dev\Code\homework\18_network\widgets" />
+      <recent name="E:\GoogleDrive\Dev\Code\homework\ninja_game\sources" />
+      <recent name="E:\GoogleDrive\Dev\Code\homework\ninja\source" />
+      <recent name="E:\GoogleDrive\Dev\Code\homework\Ninja_game\test" />
+      <recent name="E:\GoogleDrive\Dev\Code\homework\Ninja_game" />
+      <recent name="E:\GoogleDrive\Dev\Code\homework\unit_test\ninja" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -181,28 +182,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.server_socket">
-    <configuration name="client" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="education" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/18_network" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/18_network/client.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.weapons">
     <configuration name="client_socket" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="education" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -266,7 +246,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="util" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="weapons" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="education" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -274,11 +254,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/18_network" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ninja" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/18_network/util.py" />
+      <option name="SCRIPT_NAME" value="E:\GoogleDrive\Dev\Code\homework\ninja\source\weapons.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -287,13 +267,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Unittests for ninja.test_weapons.TestWeaponDispenser" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="education" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ninja/source/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;ninja.test_weapons.TestWeaponDispenser&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.weapons" />
+        <item itemvalue="Python tests.Unittests for ninja.test_weapons.TestWeaponDispenser" />
         <item itemvalue="Python.server_socket" />
         <item itemvalue="Python.client_socket" />
         <item itemvalue="Python.server" />
-        <item itemvalue="Python.client" />
-        <item itemvalue="Python.util" />
       </list>
     </recent_temporary>
   </component>
@@ -310,6 +304,14 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="Unittests_for_test_weapons_TestWeaponDispenser - 2018.12.11 at 14h 46m 01s.xml">
+      <configuration name="Unittests for test_weapons.TestWeaponDispenser" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_weapons_TestWeaponDispenser - 2018.12.11 at 14h 46m 16s.xml">
+      <configuration name="Unittests for test_weapons.TestWeaponDispenser" configurationId="tests" />
+    </history-entry>
+  </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
@@ -321,24 +323,23 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.12170706" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12170706" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49947312" weight="0.32941177" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49841937" weight="0.18431373" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49789253" weight="0.32941177" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49789253" weight="0.18431373" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49947312" weight="0.32941177" />
       <window_info anchor="bottom" id="Maya Log" order="7" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49947312" weight="0.32941177" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.7729189" weight="0.24509804" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="10" sideWeight="0.50052685" side_tool="true" visible="true" weight="0.24509804" />
-      <window_info anchor="bottom" id="Python Console" order="11" sideWeight="0.49841937" weight="0.32941177" />
-      <window_info anchor="bottom" id="MayaLog" order="12" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.7708114" visible="true" weight="0.24509804" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.22918862" side_tool="true" visible="true" weight="0.24509804" />
+      <window_info anchor="bottom" id="Python Console" order="11" sideWeight="0.49789253" weight="0.32941177" />
+      <window_info anchor="bottom" id="MayaLog" order="12" sideWeight="0.49947312" weight="0.32941177" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -448,8 +449,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/unit_test/mpkg/lecture11.py" />
     <entry file="file://$PROJECT_DIR$/unit_test/mpkg/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unit_test/mpkg/test/test_lecture04.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="92" column="8" selection-start-line="92" selection-start-column="8" selection-end-line="92" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#146#270#0" />
+            <element signature="e#146#254#1" />
+            <element signature="e#316#516#0" />
+            <element signature="e#316#428#2" />
+            <element signature="e#551#706#0" />
+            <element signature="e#559#616#2" />
+            <element signature="e#883#1026#0" />
+            <element signature="e#846#903#2" />
+            <element signature="e#989#993#0" />
+            <element signature="e#980#1037#1" />
+            <element signature="e#1068#1072#0" />
+            <element signature="e#1092#1149#1" />
+            <element signature="e#1236#1240#0" />
+            <element signature="e#1227#1284#1" />
+            <element signature="e#1445#1551#2" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ninja/source/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/ninja/source/test/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/ninja/source/weapons.py" />
+    <entry file="file://E:/venvs/fbx_test/Lib/site-packages/green/cmdline.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1330">
+          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unit_test/mpkg/lecture04.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/unit_test/mpkg/test/test_stuff.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -458,17 +502,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/unit_test/mpkg/lecture04.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.946/test_weapons.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="270">
+          <caret line="18" column="15" lean-forward="true" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/unit_test/mpkg/test/test_lecture04.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.903/weapons.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unit_test/ninja/test_weapons.py" />
+    <entry file="file://$PROJECT_DIR$/ninja_game/sources/test/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.794/weapons.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.288/test_weapons.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="33" column="11" lean-forward="true" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
+        <state>
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unit_test/ninja/weapons.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ninja_game/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ninja/source/test/test_weapons.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ninja_game/sources/weapon.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ninja_game/sources/test/test_weapon.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>

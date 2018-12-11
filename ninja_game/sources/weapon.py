@@ -1,0 +1,2 @@
+class WeaponDispenser:
+    pass

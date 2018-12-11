@@ -1,5 +1,6 @@
 def my_function(x):
     if x == 0:
+        # raise(Exception)
         return 100
     return x * 2
 
@@ -14,3 +15,7 @@ class MyClass:
 
     def get_id(self):
         return self.id
+
+    def unstable_method(self):
+        # raise(Exception)
+        pass
